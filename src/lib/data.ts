@@ -1,0 +1,107 @@
+import type { Project, Experience, Skill } from '@/types';
+
+export const projects: Project[] = [
+  {
+    slug: 'lumen-banking',
+    title: 'Lumen — Banking, reimagined',
+    client: 'Lumen Finance',
+    year: 2024,
+    category: 'Product Design',
+    tags: ['UX', 'UI', 'Design System'],
+    cover: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop',
+    description: 'Led the end-to-end redesign of a consumer banking app used by 2M+ customers. Built a token-driven design system and shipped 40+ new flows across mobile and web.',
+    role: 'Lead Product Designer',
+    link: 'https://example.com',
+  },
+  {
+    slug: 'orbit-cms',
+    title: 'Orbit CMS — A faster way to publish',
+    client: 'Orbit Media',
+    year: 2024,
+    category: 'Web App',
+    tags: ['React', 'TypeScript', 'Editor'],
+    cover: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80&auto=format&fit=crop',
+    description: 'A headless CMS focused on long-form editorial workflows. Designed and built the block editor, collaborative cursors, and the publishing pipeline.',
+    role: 'Designer & Engineer',
+  },
+  {
+    slug: 'fern-ecommerce',
+    title: 'Fern — Sustainable commerce',
+    client: 'Fern & Co.',
+    year: 2023,
+    category: 'E‑Commerce',
+    tags: ['Shopify', 'Branding', 'Motion'],
+    cover: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&q=80&auto=format&fit=crop',
+    description: 'Brand identity and Shopify storefront for an ethical fashion label. Increased conversion by 38% and average order value by 22% in the first quarter.',
+    role: 'Creative Director',
+  },
+  {
+    slug: 'pulse-analytics',
+    title: 'Pulse — Real‑time analytics',
+    client: 'Pulse Labs',
+    year: 2023,
+    category: 'Dashboard',
+    tags: ['Data Viz', 'React', 'D3'],
+    cover: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop',
+    description: 'A real-time analytics dashboard for product teams. Designed a flexible chart system and shipped a query builder used daily by hundreds of teams.',
+    role: 'Senior Designer',
+  },
+  {
+    slug: 'atlas-travel',
+    title: 'Atlas — Travel, planned together',
+    client: 'Atlas Trips',
+    year: 2022,
+    category: 'Mobile App',
+    tags: ['iOS', 'Android', 'Maps'],
+    cover: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80&auto=format&fit=crop',
+    description: 'A collaborative trip planner for groups. Built shared itineraries, live location, and a smart packing assistant.',
+    role: 'Product Designer',
+  },
+  {
+    slug: 'nova-identity',
+    title: 'Nova — Identity for a space startup',
+    client: 'Nova Aerospace',
+    year: 2022,
+    category: 'Branding',
+    tags: ['Logo', 'Typography', 'Brand'],
+    cover: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80&auto=format&fit=crop',
+    description: 'A bold visual identity for an early-stage aerospace company. Wordmark, typography system, and brand guidelines.',
+    role: 'Brand Designer',
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    company: 'Linear',
+    role: 'Senior Product Designer',
+    period: '2022 — Present',
+    description: 'Leading design on the issue tracking and project planning surfaces.',
+  },
+  {
+    company: 'Stripe',
+    role: 'Product Designer',
+    period: '2019 — 2022',
+    description: 'Worked on Billing, Subscriptions, and the merchant onboarding experience.',
+  },
+  {
+    company: 'Freelance',
+    role: 'Designer & Engineer',
+    period: '2016 — 2019',
+    description: 'Shipped brand identities and web apps for startups across Europe and the US.',
+  },
+  {
+    company: 'Royal College of Art',
+    role: 'MA Design Interactions',
+    period: '2014 — 2016',
+    description: 'Research on tangible interfaces and design for trust in financial software.',
+  },
+];
+
+export const skills: Skill[] = [
+  { name: 'Product Design', level: 95 },
+  { name: 'Design Systems', level: 92 },
+  { name: 'React & TypeScript', level: 85 },
+  { name: 'Motion & Prototyping', level: 80 },
+  { name: 'Brand & Identity', level: 78 },
+  { name: 'Research', level: 72 },
+];
