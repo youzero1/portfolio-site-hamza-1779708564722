@@ -3,7 +3,11 @@ import { ArrowUpRight, Sparkles, Star } from 'lucide-react';
 import ProjectCard from '@/components/ProjectCard';
 import Marquee from '@/components/Marquee';
 import SectionHeading from '@/components/SectionHeading';
+import Avatar from '@/components/Avatar';
 import { projects, skills } from '@/lib/data';
+
+const AVATAR_SRC =
+  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80&auto=format&fit=crop';
 
 export default function Home() {
   const featured = projects.slice(0, 4);
@@ -19,6 +23,13 @@ export default function Home() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
           </span>
           Available for new projects · Q3 2025
+        </div>
+
+        <div className="flex items-center gap-4 mb-8">
+          <Avatar src={AVATAR_SRC} alt="Alex Morgan" size={56} ring />
+          <span className="text-sm font-medium text-[var(--color-ink)]/70">
+            Hey, I'm Alex 👋
+          </span>
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-[0.95] max-w-5xl">
@@ -134,7 +145,11 @@ export default function Home() {
           have happened without him.”
         </blockquote>
         <div className="mt-8 flex items-center gap-4">
-          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-300 to-pink-400" />
+          <Avatar
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80&auto=format&fit=crop"
+            alt="Sarah Chen"
+            size={48}
+          />
           <div>
             <div className="font-medium">Sarah Chen</div>
             <div className="text-sm text-[var(--color-muted)]">Co-founder & CEO, Lumen Finance</div>

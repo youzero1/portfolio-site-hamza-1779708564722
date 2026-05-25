@@ -1,11 +1,25 @@
 import SectionHeading from '@/components/SectionHeading';
+import Avatar from '@/components/Avatar';
 import { experiences } from '@/lib/data';
+
+const PORTRAIT_SRC =
+  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80&auto=format&fit=crop';
 
 export default function About() {
   return (
     <div>
       <section className="max-w-7xl mx-auto px-6 lg:px-10 py-16 md:py-24 grid lg:grid-cols-5 gap-12">
         <div className="lg:col-span-3">
+          <div className="flex items-center gap-4 mb-8">
+            <Avatar src={PORTRAIT_SRC} alt="Alex Morgan" size={64} ring />
+            <div>
+              <div className="font-semibold tracking-tight">Alex Morgan</div>
+              <div className="text-sm text-[var(--color-muted)]">
+                Product Designer & Engineer
+              </div>
+            </div>
+          </div>
+
           <SectionHeading
             eyebrow="About"
             title="I make software that feels obvious in hindsight."
@@ -30,7 +44,7 @@ export default function About() {
         <div className="lg:col-span-2">
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-black/5">
             <img
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80&auto=format&fit=crop"
+              src={PORTRAIT_SRC}
               alt="Portrait"
               className="w-full h-full object-cover"
             />
