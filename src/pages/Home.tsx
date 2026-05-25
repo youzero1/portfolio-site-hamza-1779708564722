@@ -7,7 +7,7 @@ import Avatar from '@/components/Avatar';
 import { projects, skills } from '@/lib/data';
 
 const AVATAR_SRC =
-  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80&auto=format&fit=crop';
+  'https://sopprkucealncmlipghn.supabase.co/storage/v1/object/public/prompt-images/build-images/1779709140176-12952005304.png';
 
 export default function Home() {
   const featured = projects.slice(0, 4);
